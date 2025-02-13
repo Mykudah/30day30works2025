@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivani Mathur - 30 day 30 eorjs 2025</title>
+    <title>Shivani Mathur - 30 Days, 30 Works (2025)</title>
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             font-size: 20px;
+            color: #929292;
         }
 
         .page-container {
@@ -21,17 +22,12 @@
 
         header, footer {
             background-color: #4c4c4c;
-            color: #929292;
             text-align: center;
             padding: 10px;
         }
 
         h1 {
             text-align: center;
-        }
-
-        .header-description {
-            margin-top: 10px;
             color: #929292;
         }
 
@@ -47,36 +43,12 @@
             text-align: center;
         }
 
-        .poster, .video-item img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            display: block;
-            max-width: 100%;
-        }
-
-        video[poster] {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin: 0 auto;
-        }
-
         .video-caption {
             font-size: 18px;
             margin-top: 10px;
             text-align: center;
             cursor: pointer;
             background-color: #4c4c4c;
-            color: #929292;
             padding: 10px;
             border-radius: 5px;
         }
@@ -87,115 +59,100 @@
             padding: 10px;
             border: 1px solid #4c4c4c;
             background-color: #4c4c4c;
-            color: #929292;
             border-radius: 5px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
 
-        footer p {
-            margin: 10px 0;
-        }
-
-        footer p:last-child {
+        .day-brief {
             text-align: center;
-            color: #929292;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
         .more-info {
             cursor: pointer;
-            color: #929292;
             text-align: center;
             background-color: #4c4c4c;
             padding: 5px;
             border-radius: 5px;
             margin-top: 10px;
+            display: inline-block;
         }
+
+        img, video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Thirty days. Thirty works <br> 2025<br> </h1>
-        <p class="header-description"> <br> Shivani Mathur <br>  London</p>
-    </header>
-    <div class="video-container">
-      
+
+<header>
+    <h1>Thirty Days. Thirty Works. (2025)</h1>
+    <p>Shivani Mathur | London</p>
+</header>
+
+<div class="video-container">
+
+    <!-- Day 1 -->
     <div class="video-item">
-    <div class="video-header">
-        <p>Day 1<br><br>Brief: How are you?</p> 
+        <div class="day-brief"><strong>Day 1</strong><br><br><strong>Brief:</strong> How are you?</div>
+        <video poster="day1.jpg" controls>
+            <source src="day1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-caption">
+            <strong>Response:</strong> Alive. Strong. Resilient.<br><br>
+            <span class="more-info" onclick="toggleDescription('description-1')">More Info</span>
+        </div>
+        <div class="video-description" id="description-1">
+            <p><strong>Date:</strong> 1st February 2025<br><strong>Material:</strong> Digital Image<br><br>
+            Burning, flickering flame that does not extinguish.</p>
+        </div>
     </div>
-    <video poster="day1.jpg" controls>
-        <source src="day1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="video-caption">
-        Response: Alive. Strong. Resilient.<br><br>
-        <span class="more-info" onclick="toggleDescription('description-1')">More Info</span>
+
+    <!-- Day 2 -->
+    <div class="video-item">
+        <div class="day-brief"><strong>Day 2</strong><br><br><strong>Brief:</strong> Be over the top</div>
+        <img src="day2.jpg" alt="Day 2 Image">
+        <div class="video-caption">
+            <strong>Response:</strong> Breaking into the stratosphere.<br><br>
+            <span class="more-info" onclick="toggleDescription('description-2')">More Info</span>
+        </div>
+        <div class="video-description" id="description-2">
+            <p><strong>Date:</strong> 2nd February 2025<br><strong>Material:</strong> Photograph</p>
+        </div>
     </div>
-    <div class="video-description" id="description-1">
-        <p>Date: 1st February 2025 <br>Material: Digital image<br><br>
-        Burning, flickering flame that does not extinguish.</p>
+
+    <!-- Day 3 -->
+    <div class="video-item">
+        <div class="day-brief"><strong>Day 3</strong><br><br><strong>Brief:</strong> Reuse, Recycle, Reclaim</div>
+        <img src="day3.jpg" alt="Day 3 Image">
+        <div class="video-caption">
+            <strong>Response:</strong> Humpty Dumpty version 2.0.<br><br>
+            <span class="more-info" onclick="toggleDescription('description-3')">More Info</span>
+        </div>
+        <div class="video-description" id="description-3">
+            <p><strong>Date:</strong> 3rd February 2025<br><strong>Material:</strong> Broken and waste eggshells</p>
+        </div>
     </div>
-</div>
-        
-        
 
-      <!-- Image 2 -->
-      <div class="video-item">
-          <img src="day2.jpg" alt="Pathways of Light" class="poster" onclick="toggleDescription('description-2')">
-          <div class="video-caption">
-              Day 2 <br><br>Brief: Be over the top<br>Response: Breaking into the stratosphere<br> <br>
-              <span class="more-info" onclick="toggleDescription('description-2')">More Info</span>
-          </div>
-          <div class="video-description" id="description-2">
-              <p>Date: 2nd February 2025 <br>Material: Photograph <br>  <br>   </p>
-          </div>
-      </div>
+    <!-- Day 4 -->
+    <div class="video-item">
+        <div class="day-brief"><strong>Day 4</strong><br><br><strong>Brief:</strong> Make your work in the dark</div>
+        <img src="day4.jpg" alt="Day 4 Image">
+        <div class="video-caption">
+            <strong>Response:</strong> Painting with light.<br><br>
+            <span class="more-info" onclick="toggleDescription('description-4')">More Info</span>
+        </div>
+        <div class="video-description" id="description-4">
+            <p><strong>Date:</strong> 4th February 2025<br><strong>Material:</strong> Hologram</p>
+        </div>
+    </div>
 
-      <!-- Image 3 -->
-      <div class="video-item">
-          <img src="day3.jpg" alt="Humpty dumpty version 2.0 " class="poster" onclick="toggleDescription('description-3')">
-          <div class="video-caption">
-              Day 3<br><br>Brief: Reuse, Recycle, Reclaim<br>Response: Humpty Dumpty version 2.0. <br> Humpty Dumpty has been "put back" again, but not in the form you'd expect. she is version 2.0<br> <br>
-              <span class="more-info" onclick="toggleDescription('description-3')">More Info</span>
-          </div>
-          <div class="video-description" id="description-3">
-              <p>Date made: 3rd February 2025<br>Material: Broken and waste eggshells<br><br>12.9 Billion.<br>
-
-The number of eggs consumed in the UK each year.The total eggshells that go into landfill is  ninety three thousand metric tonnes. 
-That is the weight of  around thirty thousand elephants.<br>
-
-An eggshell is ninety five percent calcium carbonate. My sculpture is made from eggshell collected from restaurants, washed, powdered and treated. They use natural binders and materials that make them carbon negative .  With the myraid of technological changes in our world, like the cracking of an eggshell, new forces are emerging. The choice is ours: What direction do we want to take for the future of the world? 
-
- <br>
-                <img src="day3.0.jpg" alt="Humpty dumpty version 2.0 " class="poster" onclick="toggleDescription('description-3')">
-                  <img src="day3.1.jpg" alt="Humpty dumpty version 2.0 " class="poster" onclick="toggleDescription('description-3')">
-        <img src="day3.2.jpg" alt="Humpty dumpty version 2.0 " class="poster" onclick="toggleDescription('description-3')">
-        
-        
-              </p>
-          </div>
-      </div>
-
-      <!-- image 4 -->
-<div class="video-item">
-          <img src="day4.JPEG" alt="Painting with light " class="poster" onclick="toggleDescription('description-4')">
-          <div class="video-caption">
-              Day 4<br><br>Brief: Make your work in the dark<br>Response: Painting with light <br> <br> <br>
-              <span class="more-info" onclick="toggleDescription('description-4')">More Info</span>
-          </div>
-          <div class="video-description" id="description-4">
-              <p>Date made: 4th February 2025<br>Material: Hologram<br><br>
-
-
-
- 
-        
-        
-              </p>
-          </div>
-      </div>
-
+    
           <!-- image 5 -->
 <div class="video-item">
           <img src="day5.JPEG" alt="Painting with light " class="poster" onclick="toggleDescription('description-5')">
